@@ -23,13 +23,20 @@ public class PersonMain {
         System.out.println(persons);
         lf.sortByName(persons);
         System.out.println(persons);
-
+        System.out.println(lf.map(persons));
+        System.out.println(lf.reduce(persons));
+        lf.filterForEach(persons);
+        System.out.println(persons);
+        System.out.println(lf.reduce(persons));
 
     }
+
 
     public static void main(String[] args) {
         PersonMain program = new PersonMain();
         program.init();
         program.run();
     }
+
+
 }
